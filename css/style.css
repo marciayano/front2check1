@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+
+}
+
+#banner {
+  background-image: url(https://a-static.mlcdn.com.br/618x463/quadro-sorveteria-sorvetes-moderno-5-pecas-mdf6mm-neyrad/mrdecoracoes/10e79cb67a2511eba5fa4201ac1850d6/9f8dc67b916ccbc32322c11c0fd784d8.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+  display: block;
+  color: #ee6c16;
+  font-size: large;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+main {
+  background-color: rgb(220, 170, 170);
+  background-size: cover;
+  color: aliceblue;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+h2 {
+  padding-top: 10px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

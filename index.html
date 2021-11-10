@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkpoint1</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="banner">
+        <h1>Checkpoint 1 - Mural Sorveteria</h1>
+    </section>
+    
+  
+    <main class = "flex">
+      <h2>Deixe seu comentário!</h2>
+
+      <form class="flex" action="/listar">
+        <input type="text" name="field1" id="field1" placeholder="Título">
+        <input type="text" name="field2" id="field2" placeholder="Descrição">
+        <input type="text" name="field3" id="field3" placeholder="URL da sua fotinha">
+        <input type="submit" id="btn" value="Inserir na lista" class="button">
+        
+        <section>
+          <label for="periodo">Período da visita:</label>
+          <input type="radio" name="periodo" value="manha" >manhã</input>
+          <input type="radio" name="periodo" value="tarde" >tarde</input>
+          <input type="radio" name="periodo" value="noite" checked>noite</input>
+        </section>
+        
+        <div>
+          <input type="checkbox" id="condicoes"> Li e aceito as condições </input>
+        </div>
+        
+      </form>
+
+      <h2>Lista de saida</h2>
+      
+      <div id="blocoComentario"></div>
+
+  </main>
+  
+
+  <script src="/Checkpoint1/js/script.js"></script>
+
+</body>
+</html>
