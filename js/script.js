@@ -8,13 +8,13 @@ let field3 = document.querySelector('#field3');
 let checkbox = document.querySelectorAll('input[type=\'checkbox\']');
 
 // selecionar o radio button
-let radioButton = document.querySelectorAll('input[name=\'option\']')
+let radioButton = document.querySelectorAll('input[name=\'periodo\']')
 
-// selecionar o elemento do botão
-let btn = document.querySelector('#btn');
+// selecionar o elemento do botÃ£o
+let btn = document.querySelector('#form'); // 
 
 // atribuir um event listener
-btn.addEventListener('click',inserirComentario);
+btn.addEventListener('submit',inserirComentario); // 
 
 function radioChecked(inputs) {
   for(let i = 0; i < inputs.length; i++) {
@@ -24,13 +24,6 @@ function radioChecked(inputs) {
   }    
 }
 
-function checkChecked(inputs) {
-  for(let i = 0; i < inputs.length; i++) {
-      if (inputs[i].checked) {
-          return inputs[i].value;
-      }
-  }    
-}
 
 // selecionar o valor digitado no campo 1 pela pessoa usuaria
   // criar um novo elemento li
@@ -43,7 +36,6 @@ function inserirComentario(event) {
   let radio = radioChecked(radioButton);
   //let check = checkChecked(checkbox);
   let wrapper = document.querySelector('#blocoComentario')
-
 
   let titulo = document.createElement('h3');
   titulo.innerHTML = field1.value;
@@ -61,6 +53,12 @@ function inserirComentario(event) {
   selecao.innerHTML = radio;
   document.querySelector('div').appendChild(selecao);
 
-  
+  let conteudo = document.createElement('div') 
 
+  conteudo.appendChild(titulo)
+  conteudo.appendChild(descricao) 
+  conteudo.appendChild(img) 
+  conteudo.appendChild(selecao)  
+
+  wrapper.appendChild(conteudo) 
 }
