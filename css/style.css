@@ -8,15 +8,15 @@
 }
 
 #banner {
-  background-image: url(https://a-static.mlcdn.com.br/618x463/quadro-sorveteria-sorvetes-moderno-5-pecas-mdf6mm-neyrad/mrdecoracoes/10e79cb67a2511eba5fa4201ac1850d6/9f8dc67b916ccbc32322c11c0fd784d8.jpg);
+  background-image: url(https://www.wallpaperbetter.com/wallpaper/410/130/452/almonds-ice-cream-1080P-wallpaper-middle-size.jpg);
   background-position: center;
   background-size: cover;
   padding: 100px;
   display: block;
-  color: #ee6c16;
-  font-size: large;
+  color: #f0f0f0;
+  font-size: 20px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 100px;
 }
 
 main {
@@ -24,7 +24,6 @@ main {
   background-size: cover;
   color: aliceblue;
   padding: 20px;
-
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -39,7 +38,6 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -50,3 +48,27 @@ div {
   align-items: center;
 }
 
+#blocoComentario {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#blocoComentario div {
+  gap: 8px;
+  background-color: rgba(245, 243, 238, 0.274);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#blocoComentario h3 {
+  font-size: 30px;
+}
+
+#blocoComentario img {
+  height: 200px;  
+  width: 200px;
+}
+
+#blocoComentario span {
+  color: rgb(92, 2, 84);
+}
